@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DERM ASSIST - AI-Powered Dermatology Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <nav>
+            <div class="logo">
+                <img src="{{ url_for('static', path='/images/Derm_Assist_logo_1[1].png') }}" alt="DERM ASSIST Logo" class="main-logo">
+                <span>DERM ASSIST</span>
+            </div>
+            <div class="nav-tiles">
+                <a href="#login" class="nav-tile">Login</a>
+                <a href="#signup" class="nav-tile">Signup</a>
+                <a href="#usage" class="nav-tile">Usage Mode</a>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1 class="hero-title">AI-Powered Dermatology Assistant for India's Youth</h1>
+            <p class="hero-subtitle">Revolutionizing skin care with artificial intelligence</p>
+            <button class="cta-button" onclick="scrollToEmail()">Join Early Access</button>
+        </div>
+    </section>
+
+    <!-- Problem & Solution Section -->
+    <section class="problem-solution">
+        <h2>Bridging the Dermatology Care Gap</h2>
+        <div class="cards-container">
+            <div class="card">
+                <i class="fas fa-exclamation-circle"></i>
+                <h3>The Problem</h3>
+                <ul>
+                    <li>Limited access to dermatologists</li>
+                    <li>Long waiting times for appointments</li>
+                    <li>High consultation costs</li>
+                </ul>
+            </div>
+            <div class="card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Our Solution</h3>
+                <ul>
+                    <li>Instant AI-powered screening</li>
+                    <li>Privacy-first approach</li>
+                    <li>Inclusive healthcare access</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Key Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-camera"></i>
+                <h3>AI Scan</h3>
+                <p>Instant skin condition analysis using advanced AI</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Mole Tracker</h3>
+                <p>Monitor changes in moles over time</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-file-medical"></i>
+                <h3>Explainable Reports</h3>
+                <p>Detailed, easy-to-understand analysis reports</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-user-md"></i>
+                <h3>Dermatologist Review</h3>
+                <p>Professional verification of AI analysis</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-language"></i>
+                <h3>Multilingual Support</h3>
+                <p>Available in multiple Indian languages</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="audience">
+        <h2>Who is this for?</h2>
+        <div class="audience-grid">
+            <div class="audience-card">
+                <i class="fas fa-user-graduate"></i>
+                <h3>Students</h3>
+            </div>
+            <div class="audience-card">
+                <i class="fas fa-briefcase"></i>
+                <h3>Young Professionals</h3>
+            </div>
+            <div class="audience-card">
+                <i class="fas fa-user-friends"></i>
+                <h3>Mothers</h3>
+            </div>
+            <div class="audience-card">
+                <i class="fas fa-hospital"></i>
+                <h3>Clinics</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <h2>Our Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="https://ui-avatars.com/api/?name=Mohd.+Javed&background=179CA7&color=fff" alt="Mohd. Javed">
+                <h3>Mohd. Javed</h3>
+                <p>Team Member</p>
+            </div>
+            <div class="team-member">
+                <img src="https://ui-avatars.com/api/?name=Aaditya+Kumar+Jha&background=179CA7&color=fff" alt="Aaditya Kumar Jha">
+                <h3>Aaditya Kumar Jha</h3>
+                <p>Team Member</p>
+            </div>
+            <div class="team-member">
+                <img src="https://ui-avatars.com/api/?name=Shruti+Chauhan&background=179CA7&color=fff" alt="Shruti Chauhan">
+                <h3>Shruti Chauhan</h3>
+                <p>Team Member</p>
+            </div>
+            <div class="team-member">
+                <img src="https://ui-avatars.com/api/?name=Krishan+Kant+Verma&background=179CA7&color=fff" alt="Krishan Kant Verma">
+                <h3>Krishan Kant Verma</h3>
+                <p>Team Member</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="roadmap">
+        <h2>Our Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Q3 2025</h3>
+                <p>MVP Launch</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Q4 2025</h3>
+                <p>Clinical Pilot</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Q2 2026</h3>
+                <p>Public Launch</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Collection Section -->
+    <section class="email-collection" id="email-section">
+        <h2>Get Early Access</h2>
+        <form id="early-access-form" onsubmit="submitEmail(event)">
+            <input type="email" id="email-input" placeholder="Enter your email" required>
+            <button type="submit">Join Waitlist</button>
+        </form>
+        <div id="success-message" class="success-message" style="display: none;">
+            Thank you for joining our waitlist! We'll keep you updated.
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+        <blockquote>
+            "This could save us hours in dermatology OPDs."
+            <cite>– Dr. Sharma, SRM Medical Hospital</cite>
+        </blockquote>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <p>Contact: contact@dermatoai.com</p>
+        <p>&copy; 2024 DERM ASSIST. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function scrollToEmail() {
+            document.getElementById('email-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        async function submitEmail(event) {
+            event.preventDefault();
+            const email = document.getElementById('email-input').value;
+            const form = document.getElementById('early-access-form');
+            const successMessage = document.getElementById('success-message');
+
+            try {
+                const response = await fetch('/submit-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: `email=${encodeURIComponent(email)}`
+                });
+
+                if (response.ok) {
+                    form.style.display = 'none';
+                    successMessage.style.display = 'block';
+                } else {
+                    alert('Something went wrong. Please try again.');
+                }
+            } catch (error) {
+                alert('Something went wrong. Please try again.');
+            }
+        }
+    </script>
+</body>
+</html> 
