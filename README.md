@@ -1,4 +1,4 @@
-# Dermato AI - AI-Powered Dermatology Assistant
+# Derm-Assist - AI-Powered Dermatology Assistant
 
 An AI-powered dermatology assistant platform for India's youth, providing instant skin condition screening and analysis.
 
@@ -25,7 +25,7 @@ pip install -r requirements.txt
 3. Set up MongoDB:
 - Install MongoDB Community Edition
 - Start MongoDB service
-- Create a database named 'dermato_ai'
+- Create a database named 'derm-assist'
 
 4. Create a .env file in the project root with the following variables:
 ```
